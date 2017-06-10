@@ -1,0 +1,48 @@
+/* General Section */
+
+* {
+  color: white;
+}
+
+div {
+  display: block;
+}
+
+/* Logo Section */
+
+.logo {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+}
+
+/* Main Display Section */
+
+.container {
+  width: 100%;
+  height: auto;
+  background-image: url("../images/motor.jpeg");
+  background-size: cover;
+}
+
+.container .sub {
+  background-color: black;
+  width: 30%;
+  height: auto;
+}
+
+/* Navigation Section */
+nav {
+  display: block;
+  background-color: red;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav .button {
+  padding: 20px;
+}
