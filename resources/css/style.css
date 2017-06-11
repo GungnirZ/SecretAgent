@@ -147,10 +147,29 @@ nav {
   display: block;
   margin: auto;
   margin-top: 3rem;
+  width: 960px;
 }
 
 .locations {
   display: flex;
-  background-color: black;
-  width: 35%;
+  margin: auto;
+  justify-content: space-between;
 }
+
+.locations .text {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  background-color: black;
+}
+
+.text .white {
+  padding: 1rem 0 1rem 2rem;
+}
+
+.text .black {
+  color: black;
+  background-color: white;
+}
+
+/* Footer Section */
