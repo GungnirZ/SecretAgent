@@ -79,6 +79,7 @@ div {
 }
 
 /* Navigation Section */
+
 nav {
   display: block;
   background-color: firebrick;
@@ -97,13 +98,14 @@ nav {
 }
 
 /* Products Section */
-.container {
-  display: block;
-  width: 960px;
-  margin: auto;
-}
 
 .products {
+  display: block;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.products .container {
   display: flex;
   justify-content: space-between;
   margin-top: 3em;
@@ -111,7 +113,6 @@ nav {
 
 .products .item {
   display: block;
-  height: 11rem;
   width: 30%;
 }
 
@@ -121,7 +122,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 0rem;
 }
 
 .image img {
@@ -138,4 +139,18 @@ nav {
 
 .glasses img {
   height: 5rem;
+}
+
+/* Locations Section */
+
+.info {
+  display: block;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.locations {
+  display: flex;
+  background-color: black;
+  width: 35%;
 }
