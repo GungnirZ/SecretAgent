@@ -27,7 +27,7 @@ div {
 .logo .container {
   display: flex;
   margin-left: 50px;
-  width: 960px;
+  max-width: 960px;
   margin: auto;
 }
 
@@ -53,9 +53,8 @@ div {
 
 .main .container {
   margin: auto;
-  width: 960px;
+  max-width: 960px;
   height: 25rem;
-
   display: flex;
 }
 
@@ -63,7 +62,7 @@ div {
   top: 9rem;
   align-self: center;
   background-color: black;
-  width: 20rem;
+  max-width: 20rem;
   padding: 2rem 3rem;
 }
 
@@ -190,13 +189,13 @@ footer {
 
 .footer {
   padding-top: 5rem;
-  width: 960px;
+  max-width: 960px;
   margin: auto;
 }
 
-/* Media Query 1024px */
+/* Media Query Tablet - 960px */
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 960px) and (min-width: 470px) {
   .nav {
     display: none;
   }
@@ -221,9 +220,94 @@ footer {
 
   .products .glasses {
     margin-top: 2rem;
+    display: none;
+  }
+
+  .products .glasses-span {
+    display: none;
   }
 
   .locations .text {
     width: 30%;
+  }
+}
+
+/* Media Query Phone - 470px */
+
+@media only screen and (max-width: 470px) {
+  .nav {
+    display: none;
+  }
+
+  .collapse {
+    display: flex;
+    max-width: 960px;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .collapse span {
+    align-self: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .logo img {
+    margin: auto;
+  }
+
+  .main .sub {
+    width: 100%;
+    align-self: flex-end;
+    font-weight: bold;
+  }
+
+  .sub h4 {
+    font-size: 0.77rem;
+  }
+
+  .sub h1 {
+    font-size: 1rem;
+  }
+
+  .products .item {
+    margin: auto;
+    width: 90%;
+  }
+
+  .watch, .glasses {
+    margin-top: 1rem;
+  }
+
+  .locations {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .locations .text {
+    width: 90%;
+    margin-top: 0.5rem;
+  }
+
+  .footer {
+    text-align: center;
+  }
+}
+
+
+/* Media Query (downsize locations text by a bit because of irregularity) */
+@media only screen and (max-width: 548px) and (min-width: 494px) {
+  .locations .black {
+    font-size: 0.9rem;
+  }3
+}
+
+@media only screen and (max-width: 494px) and (min-width: 470px) {
+  .locations .black {
+    font-size: 0.83rem;
   }
 }
